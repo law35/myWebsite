@@ -1,0 +1,123 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+<div id="main">
+	{% block div %}
+	<div id="banner">
+		<video controls>
+		<source src="{% static 'videos/ChemLab2013.mp4' %}" type="video/mp4">
+		</video>
+	</div>
+	{% endblock %}
+</div>
+<div id="featured">
+	{% block content %}
+		<ul class="lst">
+				<li class="first">
+					<p class="numbering"><b>.I</b></p>
+					<h3 id="contenttitle1">Biology Major: California Baptist University (1 year 10 months):</h3>
+					<h4 id="subtitle1">Biology 146:</h4>
+					<p id="content1">
+						<ul id="list1" class="list">
+							<li>Topics covered include cell structure and function,</li>
+							<li>genetics, reproduction and development of animal systems.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.II</b></p>
+					<h3 id="contenttitle2"></h3>
+					<h4 id="subtitle2">Biology 148:</h4>
+					<p id="content2">
+						<ul id="list2" class="list">
+							<li>Organism biology of animals and plants.</li>
+							<li>Their behavior, ecology, evolution and adaptations.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.III</b></p>
+					<h3 id="contenttitle3"></h3>
+					<h4 id="subtitle3">General Biology 1:</h4>
+					<p id="content3">
+						<ul id="list3" class="list">
+							<li>Fundamental concepts of biochemistry, cell biology, genetics. </li>
+							<li>Important organic molecules, cell structure and function.</li>
+							<li>Metabolism and enzyme activity. </li>
+							<li>Cellular respiration and photosynthesis.</li>
+							<li>
+							DNA structure, meiosis and mitosis, Mendelian genetics.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.IV</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">Biology 114:</h4>
+					<p id="content4">
+						<ul id="list5" class="list">
+							<li>A study of physiology, morphology and reproduction of plants.</li>
+							<li>Including fungi, algae,</li>
+							<li>
+							liverworts, mosses, ferns, gymnosperms and angiosperms.
+							</li>
+							<li>The relevance of plants to humans.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.V</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">General Chemistry 115:</h4>
+					<p id="content4">
+						<ul id="list6" class="list">
+							<li>Structure and behavior of inorganic matter</li>
+							<li>and a mathematical treatment of chemical systems.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.VI</b></p>
+					<h3 id="contenttitle7"></h3>
+					<h4 id="subtitle4">General Chemistry:</h4>
+					<p id="content4">
+						<ul id="list4" class="list">
+							<li>A continuation of Chemistry 115,</li>
+							<li>including qualitative inorganic analysis.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.VII</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">General Psychology:</h4>
+					<p id="content4">
+						<ul id="list8" class="list">
+							<li>
+							introductory survey of the processes of adjustment,
+							</li>
+							<li>
+							growth, learning, remembering, perception, sensation,
+							</li>
+							<li>socialization, and emotions.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.VIII</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">College Algebra 1 & 2:</h4>
+					<p id="content4">
+						<ul id="list9" class="list">
+							<li>Study of roots, radicals, quadratic equations and inequalities;</li> 
+							<li>graphing relations, functions, systems of equations, inequalities,</li> 
+							<li>matrices and determinants;</li> 
+							<li>evaluate logarithmic and exponential expressions;</li> <li>calculate the probability with given parameters;</li> <li>Evaluate arithmetic and geometric sequences.</li>
+						</ul>
+					</p>
+				</li>
+			</ul>
+			
+			<a href="{% url 'surgical' %}">Surgical Technology>></a>
+	{% endblock %}
+</div>

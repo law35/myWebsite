@@ -1,0 +1,141 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+
+<div id="main">
+	{% block div %}
+	<div id="banner">
+		<img src="{% static 'images/mayo2.jpg' %}" alt="" class="fullimage" />
+	</div>
+	{% endblock %}
+</div>
+<div id="featured">
+	{% block content %}
+		<ul class="lst">
+				<li class="first">
+					<p class="numbering"><b>.I</b></p>
+					<h3 id="contenttitle1">Surgical Technology: American College of Health care:</h3>
+					<h4 id="subtitle1">Anatomy &  Physiology I:</h4>
+					<p id="content1">
+						<ul id="list1" class="list">
+							<li>Study levels of organization of the body, simplest to complex.</li>
+							<li>Negative and positive feedback mechanisms.</li> 
+							<li>Anatomic positions and terminology of different body regions.</li>
+							<li>Body cavities, their membranes and organs in each cavity.</li> 
+							<li>
+							Organic molecules of cell membranes, their functions
+							</li> 
+							<li>and the functions of cell organelles and cell transport systems.</li> 
+							<li>Cell metabolism growth and development.</li> 
+							<li>
+							(Transcription & Translation of DNA) protein synthesis;
+							</li> 
+							<li>
+							Characteristics and four major categories of tissues;
+							</li>
+							<li>
+							Exocrine and Endocrine systems; Musculoskeletal system;
+							</li>
+							<li>cellular mechanisms of muscle contraction,</li>
+							<li>Bone tissue growth and homeostasis.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.II</b></p>
+					<h3 id="contenttitle2"></h3>
+					<h4 id="subtitle2">Anatomy & Physiology II:</h4>
+					<p id="content2">
+						<ul id="list2" class="list">
+							<li>Examine general structure and functions of the digestive system</li> 
+							<li>and the mechanisms of chemical and mechanical digestion.</li>
+							<li>Divisions of the nervous system both structure and fucntion</li>
+							<li>
+							and transmissions of impulses within neurological systems.
+							</li>
+							<li>The different regions of the brain.</li>
+							<li>Division of the nervous system along with sensory pathways.</li>
+							<li>Anatomy and physiology of the eye and ear.</li>
+							<li>Subdivision of the circulatory system(Lymphatic system);</li>
+							<li>lymph production / function.</li>
+							<li>Composition and function of blood plasma,</li>
+							<li>
+							primary hemopoietic tissue and blood cell synthesis;
+							</li>
+							<li>Chemical stages of clotting.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.III</b></p>
+					<h3 id="contenttitle3"></h3>
+					<h4 id="subtitle3">Anatomy & Physiology III:</h4>
+					<p id="content3">
+						<ul id="list3" class="list">
+							<li>Study the pericardial and endocardium of the heart.</li>
+							<li>The chambers of the heart along with its valves and vessels.</li>
+							<li>Cardiac cycles, coronary circulation, output and Starling's law.</li>
+							<li>Neuro-regulation of heart rate and force of contraction;</li>
+							<li>Structure and function of major arteries, viens, capillaries,</li>
+							<li>arterial and venous anastomoses.</li>
+							<li>Pathways of hepatic portal circulation;</li>
+							<li>modifications of fetal circulation and blood pressure regulation;</li>
+							<li>Autonomic regulation of blood vessel diameter.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.IV</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">Intro to Surgical Technology I:</h4>
+					<p id="content4">
+						<ul id="list4" class="list">
+							<li>Delinate the development of the Surgical Technology field.</li>
+							<li>Identify the members of the surgical team and their roles.</li>
+							<li>Understand the facets of a surgical technologist job description.</li>
+							<li>Demomstrate the principles of communication within the O.R.</li>
+							<li>Summarize the types of health care facilities.</li>
+							<li>Distinguish between sterile and non-sterile team members.</li>
+							<li>Identify the indicators of sterility.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.V</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">Intro to Surgical Technology II:</h4>
+					<p id="content4">
+						<ul id="list5" class="list">
+							<li>An introduction to surgical instrumentation</li> 
+							<li>along with specific nomenclature (names)and classification.</li>
+							<li>Concepts of sterilization and disinfection;</li>
+							<li>and their effects on wound healing.</li>
+							<li>The care, use and handling of instrumentation and suture.</li>
+							<li>Detailed study and application of common surgical procedures.</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.VI</b></p>
+					<h3 id="contenttitle4"></h3>
+					<h4 id="subtitle4">Intro to Surgical Technology III:</h4>
+					<p id="content4">
+						<ul id="list6" class="list">
+							<li>Define basic legal principles.</li>
+							<li>Interpret the legal responsibilities of the surgical team.</li>
+							<li>with an emphasis on those of the surgical technologist.</li>
+							<li>Understand the ethical issues within the scope of practice.</li>
+							<li>Demonstrate the principles of operating room preparation.</li>
+							<li>building and preserving a sterile field.</li>
+							<li>Perform a proper surgical scrub.</li>
+							<li>don sterile personal protection equipment.</li>
+							<li>
+							Enter a sterile field using correct sterile technique.
+							</li>
+						</ul>
+					</p>
+				</li>
+			</ul>
+			<a href="{% url 'education' %}">Biology Major</a> <a href="{% url 'home' %}">Home>></a>
+	{% endblock %}
+</div>

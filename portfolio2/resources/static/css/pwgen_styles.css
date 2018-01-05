@@ -1,0 +1,55 @@
+/* reset */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+/*class tags*/
+.canvas{
+	background-color: rgb(254,250,246);
+	background-position: center;
+	background-size: cover;
+	margin-left: 2%;
+	margin-right: .01%;
+	margin-top: 1%;
+	margin-bottom: .01%;
+}
+
+.lbl{
+	font-family: "Times New Roman" Georgia, Serif;
+}
+
+.radiobt{
+	margin-top: .9%;
+}
+
+
+/*id's*/
+#ui{
+	margin-left: 10%;
+}
+
+#genbt{
+	margin-top: 2%;
+}
+
+#display{
+	margin-top: 2.5%;
+}
+
+#eight{
+	margin-left: 2%;
+}
+
+#twelve{
+	margin-left: 2%;
+}
+
+#genbt{
+	margin-left: 2.5%;
+}
+
+#genbutton{
+	width: 120px;
+}

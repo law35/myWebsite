@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--two-column, fixed-width design with dark color scheme.-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+{% block script %}
+<script type="text/javascript" src="#"></script>
+{% endblock %}
+<script type="text/javascript" src="{% static 'js/quotegen.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/pwGen.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/macro.js' %}"></script>
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link rel="stylesheet" type="text/css"  href="{% static 'css/styling.css' %}" media="all" />
+
+<!--[if IE 6]><link href="styling_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="{% static 'images/me.png'%}" alt="" />
+			<h1><a href="#">My Portfolio</a></h1>
+			<span>Design by <a href="" rel="">
+			C.O.Lawshea</a></span>
+		</div>
+		<div id="sidebarmenu">
+			<ul>
+				<li><a id="home" href="{% url 'home' %}">Home</a></li>
+				<li><a id="skills" href="{% url 'genskills' %}">Skills</a></li>
+				<li><a id="education" href="{% url 'education' %}">Education</a></li>
+				<li><a id="exp" href="{% url 'medicalexp' %}" >Experience</a></li>
+				<li><a id="samplepro" href="{% url 'programmingexp' %}">Program Samples</a></li>
+				<li><a id="contact" href="{% url 'contact' %}" >Contact Me</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="main">
+		{% block div %}
+		<div id="banner">
+			<img src="" alt="" class="image-full"/>
+		</div>
+		{% endblock %}
+		
+		{% block welcome %}
+		<div id="welcome">
+			<div class="title">
+				<h2>Welcome to my website!</h2>
+			</div>
+			<p>
+				Hello, this is my first personal website. Here, I get to display
+				my skills and talents acquired over the years. As a matter of fact
+				you are looking at and using the product of one of my skills now...this very website. 
+				Yes, I designed and programmed this site myself! 
+				I hope you enjoy taking a small peek into my career interests and pursuits.
+			</p>
+		</div>
+		{% endblock %}
+		<span>
+		<div class='generator' id='main-generator'>
+			<div class='generator-wrapper'>
+				<p alt='First' class='quote'>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it." -Steve Jobs</p>
+				<p alt='Second' class='quote'>"Formal education will make you a living; self-education will make you a fortune." -Jim Rohn
+				</p>
+				<p alt='Third' class='quote'>"Education is what remains after one has forgotten 	what one has learned in school." -Albert Einstein</p>
+				<p alt='Fourth' class='quote'>"Ninety-nine percent of the failures come from people who have the habit of making excuses." -George Washington Carver</p>
+				<p alt='Fifth' class='quote'>"Every living being is an engine geared to the wheel-work of the universe. Though seemingly affected only by its immediate surrounding, the sphere of external influence extends to infinite distance." -Nikola Tesla</p>
+				<p alt='Sixth' class='quote'>"No individual has any right to come into the world and go out of it without leaving behind him distinct and legitimate reasons for having passed through it." -George Washington Carver</p>
+				<p alt='Seventh' class='quote'>"It's fine to celebrate success but it is more important to heed the lessons of failure." -Bill Gates</p>
+				<p alt='Eighth' class='quote'>"If your culture doesn't like geeks, you are in real trouble." -Bill Gates</p>
+				<p alt='Ninth' class='quote'>"Don't worry that you can't seem to come up with sure billion dollar winners at first. Just do projects for yourself for fun. You'll get better and better." -Steve Wozniak</p>
+				<p alt='Tenth' class='quote'>"It's the great tragedy - people employed in ways that don't fully tap everything they do best in life." -Neil deGrasse Tyson</p>
+				<p alt='Eleventh' class='quote'>"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do." -Pele</p>
+				<p alt='Twelfth' class='quote'>"There are no secrets to success. It is the result of preparation, hard work, and learning from failure." -Colin Powell</p>
+				<p alt='Thirteenth' class='quote'>"The two most powerful warriors are patience and time." -Leo Tolstoy</p>
+				<p alt='Fourteenth' class='quote'>"If your actions inspire others to dream more, learn more, do more and become more, you are a leader." -John Quincy Adams</p>
+				<p alt='Fifteenth' class='quote'>"Leadership is practiced not so much in words as in attitude and in actions." -Harold S. Geneen</p>
+				<p alt='Sixteenth' class='quote'>"The quality of a leader is reflected in the standards they set for themselves." -Ray Kroc</p>
+				<p alt='Seventeenth' class='quote'>"Self-education is, I firmly believe, the only kind of education there is." -Isaac Asimov,</p>
+			</div><!--End Quote Generator-->
+			</span>
+		</div>
+		{% block featured %}
+		<div id="featured">
+			{% block content %}
+			<ul class="lst">
+				<li class="first">
+					<p class="numbering"><b>.I</b></p>
+					<h3 id="">Medical Administration</h3>
+					<h4 id="">Clinical Support(Radiology) / Medical Records:</h4>
+					<p id="content1">
+						<ul id="" class="list">
+							<li>Professional phone etiquette</li>
+							<li>Excellent communication skills</li>
+							<li>Customer Service</li>
+							<li>Accurate and detailed</li>
+							<li>Trained in HIPPA compliance</li>
+							<li>Medical Terminology</li>
+							<li>CPR certification</li>
+							<li>Knowledge of electronic medical record systems</li>
+							<li>Time Management</li>
+							<li>Professionalism</li>
+							<li>Scheduling</li>
+							<li>Computer and Electronics skills </li>
+							<li>Radiology operations</li>
+							<li>(Epic, e-Clinical Works, Excel, Word, Outlook, PowerPoint)</li>
+							<li>Problem Solving</li>
+							<li>Accurate Information Recall</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.II</b></p>
+					<h3 id="">Military(United States Navy)</h3>
+					<h4 id="">Naval Security:</h4>
+					<p id="content2">
+						<ul id="" class="list">
+							<li>Operational Risk Management</li>
+							<li>Combat First Aid</li>
+							<li>Sterilization</li>
+							<li>Small Arms Safety</li>
+							<li>Pistol Fundamentals</li>
+							<li>Pistol Marksmanship</li>
+							<li>Pistol Combat Shooting</li>
+							<li>Rifle Safety</li>
+							<li>Rifle Fundamentals</li>
+							<li>Rifle Marksmanship</li>
+							<li>Rifle Combat Shooting</li>
+							<li>Vehicle Bailout</li>
+							<li>Basic Military Comms</li>
+							<li>Counter-IED Recognition</li>
+							<li>Combat Psychology</li>
+							<li>Rules of Engagement</li>
+							<li>Nautical Navigation</li>
+							<li>Land Navigation</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.III</b></p>
+					<h3 id="">Surgical Procedure</h3>
+					<h4 id=""><a href="">Surgical Technology(click here for education):</a></h4>
+					<p id="content3">
+						<ul id="" class="list">
+							<li>Aseptic Techniques</li>
+							<li>Wound Dressing</li>
+							<li>Sterilization</li>
+							<li>Cautery Safety</li>
+							<li>Supplies Inventory</li>
+							<li>Specimen Labeling/Disposal</li>
+							<li>Surgical Procedural Support</li>
+							<li>Maintain and re-stock supplies</li>
+							<li>Prepare patients </li>
+							<li>Medical instrumentation</li>
+							<li>Medical Terminology</li>
+							<li>Total knee arthroplasty</li>
+							<li>ORIF of Mandible</li>
+							<li>Tibia plateau ORIF</li>
+							<li>Hernia Repair</li>
+							<li>Cholecystectomy</li>
+							<li>Percutaneous Endoscopic Gastrostomy</li>
+							<li>Appendectomy</li>
+							<li>Cesarean Section</li>
+							<li>Ectopic Pregnancy</li>
+							<li>Tonsillectomy/Adenoidectomy</li>
+							<li>Partial Mastectomy</li>
+							<li>Excision of Axillary Mass</li>
+							<li> Irrigation & Drainage</li>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.IV</b></p>
+					<h3 id="">Software Engineering</h3>
+					<h4 id="">Programming / Web Development:</h4>
+					<p id="content4">
+						<ul id="" class="list">
+							<li>Visual Basic 6</li>
+							<li>Python</li>
+							<li>SQL</li>
+							<li>HTML 5</li>
+							<li>CSS 3</li>
+							<li>JavaScript</li>
+							<li>Windows PowerShell</li>
+							<li>GIT</li>
+							<li>Data Structures</li>
+							<li>Object Oriented Programming</li>
+							<li>Anaconda</li>
+							<li><a href="https://docs.djangoproject.com/en/1.11/">Django</a></li>
+							<li>Debugging</li>
+							<li>Abstraction</li>
+							<li>Decomposition</li>
+							<li>Modeling</li>
+							<li>Basic Database Design</li>
+							<li>Event-Driven Programming</li>
+							<li>Pip</li>
+							<li>Full-Stack Web Development</li>
+							<li>Command Line Interface</li>
+						</ul>
+					</p>
+				</li>
+			</ul>
+			{% endblock %}
+		</div><!--End Featured div-->
+		{% endblock %}
+		<div id="poweredby">
+			<span>
+				Powered by<a href="https://docs.djangoproject.com/en/1.11/" rel="">DJANGO</a>.
+			</span>
+			<span>
+				<a id="sitemap" href="#"><img src="{% static 'icons/sitemap.png'%}"  width="30" height="30" alt="" /></a>
+			</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

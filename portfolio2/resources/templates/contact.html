@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<a href="https://www.linkedin.com/in/clearthur-oscar-lawshea-01680a105">
+	<img id="link" src="{% static 'icons/linkedin.ico'%}" width="60" height="60"/>
+</a>
+
+<span>	
+	<p><a href="mailto:clearthur.lawshea@yahoo.com" target="_top">Email Me</a></p>
+</span>
+<a href="{% url 'home' %}">Home>></a>
+{% endblock %}

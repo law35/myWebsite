@@ -1,0 +1,51 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+<div id="main">
+	{% block div %}
+	<div id="banner">
+		<img src="{% static 'images/msron5.jpg' %}" alt="" class="fullimage" />
+	</div>
+	{% endblock %}
+</div>
+<div id="featured">
+	{% block content %}
+		<ul class="lst">
+				<li class="first">
+					<p class="numbering"><b>.I</b></p>
+					<h3 id="contenttitle1">Fireman Apprentice:</h3>
+					<h4 id="subtitle1">November 2007 Great Lakes IL:</h4>
+					<p id="content1">
+						<ul id="list1" class="list">
+							<p>I trained to perform all basic fireman apprenticeship functions in engineering areas aboard ship, involving cleanliness, operation, maintenance, and preservation of main propulsion, auxiliary steam or diesel machinery, steam or diesel generators, various pumps, motors, and associated equipment. In addition, I learned to identify basic types and components of naval boilers, steam turbines, reduction gears, propellers and shafting, shipboard electric systems, and internal combustion engines (including gas turbines); which aided me in performing routine maintenance procedures.</p>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.II</b></p>
+					<h3 id="contenttitle2">Expeditionary Force Combat Skills:</h3>
+					<h4 id="subtitle2"> January 2009 Gulfport MS:</h4>
+					<p id="content2">
+						<ul id="list2" class="list">
+							<p>Acquired necessary individual knowledge, skills and abilities to perform basic/combat first aid, don and wear
+							Individual Combat Equipment (ICE) and Chemical, Biological and Radiological (CBR) gear. Can function safely in a CBR Nuclear Explosive (CBRNE) environment. Understand basic Land Navigation and understand basic radio communications techniques. Able to conduct Counter-Improvised Explosive Device(C-IED) operations and range live-fire missions and ammunition handling with minimum risk. Demonstrates, qualifies and is comfortable with both primary and secondary weapons. Perform basic movement while engaging targets, transitions from primary to secondary weapon, executes vehicle emergency egress procedures, and conducts live-fire exercises in a controlled environment. Familiar with the psycho/physiological effects induced during deadly force or life threatening confrontations and measures to effectively minimize their impact on engagement decision
+							making during Judgment-Based Engagement Training (JET).</p>
+						</ul>
+					</p>
+				</li>
+				<li>
+					<p class="numbering"><b>.III</b></p>
+					<h3 id="contenttitle3">Engineman:</h3>
+					<h4 id="subtitle3">
+						June 2008 - 2012 MSRON 5, Imperial Beach CA:</h4>
+					<p id="content3">
+						<ul id="list3" class="list">
+							<p>Operated, maintained, and repaired (organizational and intermediate level) internal-combustion engines, main propulsion machinery, refrigeration, air conditioning, gas turbine engines, and assigned auxiliary equipment. Routinely stood watch on auxiliary boilers. Aligned and operated drain systems, stripping systems, machinery cooling water systems, oil systems, and purifier systems; monitored steam systems and secured internal combustion engines, steam distilling plants, compressed air systems, refrigeration and air conditioning systems. On occasion, record pressure and temperature readings on operating equipment; conducted tests on lubricating oil and distillate fuels; operated and maintained auxiliary boilers; overhauled valves; conducted preventive maintenance on auxiliary equipment, main propulsion equipment, small craft clutches, transmissions and drive shafts; tested electro-hydraulic steering systems; inspecting for leaks in reduction gears and thrust bearings. installed flange shields on piping systems. Monitored electrical charging and regulating systems. Completed maintenance data system forms; using blueprints,drawings, and manuals.</p>
+						</ul>
+					</p>
+				</li>
+			</ul>
+			<a href="{% url 'medicalexp' %}">Medical Experience</a>
+			<a href="{% url 'programmingexp' %}">Programming>></a></a></a>
+	{% endblock %}
+</div>

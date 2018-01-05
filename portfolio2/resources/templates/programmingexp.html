@@ -1,0 +1,117 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block welcome %}
+	<div id="welcome">
+		<div class="title">
+			<h2>Welcome to my website!</h2>
+		</div>
+		<p>
+			This is my favorite page on the site. Here you will get to play around with a few javascript programs 
+			I have written. The first one is a small weather app I threw together thanks to a few tutorials; The next 
+			is a simple password generator and last but not least, a macro-nutrient calculator that sums up your 
+			daily caloric needs to maintain your current weight, Enjoy!
+		</p>
+	</div>
+{% endblock %}
+<!-------------------------------------------------------------------------------->		
+{% block script %}
+<script type="text/javascript" src="{% static 'js/weather_app.js' %}"></script>
+{% endblock %}
+<div id="main">
+	{% block div %}
+	<div id="banner">
+		<form class="weather-app">
+			<div class="left">
+				<div class="temperature">
+					<span id="temperature">0</span>&deg;
+				</div>
+				<div class="location">
+					<span id="location">unknown</span>
+				</div>
+			</div>
+			<div class="right">
+				<div class="top">
+					<img id="icon" width="75px" src="{% static 'weather_imgs/200.png' %}"/>
+				</div>
+				<div class="bottom">
+					<div class="humidity">
+						<img src="{% static 'weather_imgs/humidity.png' %}" height="16px"/>
+						<span id="humidity">0</span>%
+					</div>
+					<div class="wind">
+						<span id="wind">0</span> mph <span id="direction">N</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	{% endblock %}
+</div>
+<!------------------------------------------------------------------------------------------------------------>
+<div id="featured">
+{% block content %}
+<div class="frame">
+	<h4 id="subtitle1">Random Password Generator:</h4>
+	<form>
+		<label>Choose password length below:</label>
+		<div>
+			<input type="radio" id="six" name="pwlength" value="6" checked="checked"/>Six
+			<input type="radio" id="eight" name="pwlength" value="8"/>Eight
+			<input type="radio" id="twelve" name="pwlength" value="12"/>Twelve
+		</div>
+		<div>
+			<button type="button" class="entbutton" onclick="passwordGen(); return false;">Generate</button>
+		</div>
+		<p><span name="output" id="newpw">Your password will generate here:</span></p><br/>
+	</form>
+</div>
+
+<hr>
+
+<div class="frame">
+	<h4 id="subtitle2">Macro Calculator:</h4>
+		<form>
+			<label class="lbl">Weight(lbs):</label>
+			<input id="weightlbs" type="number" name="weight_txtbox"/>
+			<label class="lbl">Height(ft.):</label>
+			<input id="height" type="number" name="height_txtbox"/>
+			<label class="lbl">Age(yrs):</label>
+			<input id="age" type="number" name="age_txtbox"/>
+		<div id="genderchoice">
+			<label class="lbl">Choose your Gender:</label>
+			<input type="radio" name="gender" value="5"/>Male
+			<input type="radio" name="gender" value="-161"/>Female
+		</div>
+		<div id="activitychoice">
+			<label class="lbl">Choose your level of physical activity:</label>
+			<input type="radio" name="activity" value="1.8"/>Very active
+			<input type="radio" name="activity" value="1.6"/>Moderately Active
+			<input type="radio" name="activity" value="1.4"/>Lightly Active
+			<input type="radio" name="activity" value="1.2"/>Sedentary(little to no exercise)
+		</div>
+		<div>
+			<button type="button" class="entbutton" onclick="macro_cal(); return false;">Submit</button>
+		</div>
+		<div id="output">		
+			<label class="lbl" for="daily fat needs">
+			Daily fat needs(grams max):</label>
+			<p><span name="output" id="fats"></span></p><br/>
+
+			<label class="lbl" for="daily carbohydrate needs">
+			Daily carbohydrate needs(grams):</label>
+			<p><span name="output" id="carbs"></span></p><br/>
+			
+			<label class="lbl" for="daily protein needs">
+			Daily protein needs(grams):</label>
+			<p><span name="output" id="protein"></span></p><br/>
+			
+			<label class="lbl" for="overall caloric needs">
+			Maintenance caloric needs:</label>
+			<p><span name="output" id="calories"></span></p><br/>
+		</div>
+		</form>
+</div>
+<a href="{% url 'home' %}">Home>></a>
+{% endblock %}
+</div>
