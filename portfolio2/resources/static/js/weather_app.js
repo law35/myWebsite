@@ -57,13 +57,16 @@ function sendRequest(url){
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
 			var data = JSON.parse(xmlhttp.responseText);
 			var weather = {};
-			weather.icon = data.weather[0].id;
+			icon = ("<img src='http://openweathermap.org/img/w/"+ data.weather[0].icon + ".png'>");
+			//weather.iconcode = data.weather[0].icon;//
 			weather.humidity = data.main.humidity;
 			weather.wind = data.wind.speed;
 			weather.direction = degrees_to_direction(data.wind.deg);
 			weather.loc = data.name;
 			weather.temp = kel_to_fah(data.main.temp);
 			update(weather);
+			console.log(weather.iconcode);
+			console.log(icon);
 		}
 	};
 	xmlhttp.open("GET", url, true);
@@ -77,7 +80,7 @@ function update(weather){
 	humidity.innerHTML = weather.humidity;
 	wind.innerHTML = weather.wind;
 	direction.innerHTML = weather.direction;
-	icon.src = "weather_imgs" + weather.icon + ".png";
+	icon.src = "img/w/" + icon + ".png";//
 	console.log(icon.src);
 }
 
@@ -98,7 +101,7 @@ window.onload = function(){
 		navigator.geolocation.getCurrentPosition(show_position);
 		
 	}else{
-		var zip = window.prompt("We could not detect your current location; What is your zip code?");
+		var zip = window.prompt("If you would like to get the current weather in your location, please enter your zip code>>");
 		updateByZip(zip);
 	}
 }
