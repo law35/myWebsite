@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html, body{
 	height: 100%;
 }
@@ -5,8 +7,8 @@ html, body{
 body{
 	margin: 0px;
 	padding: 0px;
-	background: #6882A8;
-	font-family: 'Source Sans Pro', sans-serif;
+	background: #334467;
+	font-family: 'Share Tech', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
 	color: #444444;
@@ -31,9 +33,6 @@ ol, ul{
 	
 p{
 	line-height: 180%;
-}
-	
-strong{
 }
 	
 a{
@@ -82,6 +81,7 @@ a:hover{
 	margin: 0 auto;
 	width: auto;
 }
+/*************************************/
 
 /* list styling */
 .lst{
@@ -173,48 +173,6 @@ a:hover{
 }
 /*************************/
 
-/* contact styling */
-ul.contact{
-	margin: 0;
-	padding: 2em 0em 0em 0em;
-	list-style: none;
-}
-	
-ul.contact li{
-	display: inline-block;
-	padding: 0em 0.30em;
-	font-size: 1em;
-}
-	
-ul.contact li span{
-	display: none;
-	margin: 0;
-	padding: 0;
-}
-	
-ul.contact li a{
-	color: #FFF;
-}
-	
-ul.contact li a:before{
-	display: inline-block;
-	background: #3f3f3f;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 20px;
-	text-align: center;
-	color: #FFFFFF;
-}
-	
-ul.contact li a.icon-twitter:before { background: #2DAAE4; }
-ul.contact li a.icon-facebook:before { background: #39599F; }
-ul.contact li a.icon-dribbble:before { background: #C4376B;	}
-ul.contact li a.icon-tumblr:before { background: #31516A; }
-ul.contact li a.icon-rss:before { background: #F2600B; }
-/************************************************************/
-
-
 /* buttons styling */
 .button{
 	display: inline-block;
@@ -226,62 +184,8 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	font-size: 0.90em;
 	color: #FFF;
 }
-	
-.button:before{
-	display: inline-block;
-	background: #FFC31F;
-	margin-right: 1em;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 20px;
-	text-align: center;
-	color: #272925;
-}
-		
 
-/* two colums */
-.box1, .box2, .box3, .box4{
-	width: 235px;
-}
-	
-.box1, .box2, .box3{
-	float: left;
-	margin-right: 20px;
-}
-	
-.box4{
-	float: right;
-}
-	
-
-/* three columns */
-.boxA, .boxB, .boxC{
-	width: 320px;
-}
-
-.boxA, .boxB{
-	float: left;
-	margin-right: 20px;
-}
-	
-.boxC{
-	float: right;
-}
 /**************************************/
-
-/* two columns */
-.tbox1, .tbox2{
-	width: 575px;
-}
-	
-.tbox1{
-	float: left;
-}
-
-.tbox2{
-	float: right;
-}
 
 .list li{
 	font-size: 20px;
@@ -395,9 +299,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 
 .wind {
 }/* End Weather App styling */
-
-/* End Classes */
-
+/******************************************/
 
 #header{
 	position: relative;
@@ -407,51 +309,41 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 }
 
 
-/* logo styling */
-#logo{
+/* avatar styling */
+#my-avatar{
 	text-align: center;
 	margin-bottom: 4em;
 }
 	
-#logo h1{
+#my-avatar h1{
 	display: block;
 }
 	
-#logo a{
+#my-avatar a{
 	text-decoration: none;
 	color: #FFF;
 }
 	
-#logo span{
+#my-avatar span{
 	padding-right: 0.5em;
 	text-transform: uppercase;
 	font-size: 0.90em;
 	color: #FFF;
 }
 
-#logo span a{
+#my-avatar span a{
 	color: #9D9DA4;
 }
 	
-#logo img{
+#my-avatar img{
 	display: inline-block;
 	margin-bottom: 1em;
-	border-radius: 50%;
+	border-radius: 25%;
 }
-/********************************/
-
 
 /* sidebar menu styling */
-#sidebarmenu{
-	
-}
-	
-#sidebarmenu ul{
-	
-}
-	
 #sidebarmenu li{
-	border-top: 1px solid rgba(255,255,255,0.08);
+	border-top: 2px solid rgba(255,255,255,0.08);
 }
 	
 #sidebarmenu li a, #sidebarmenu li span{
@@ -473,29 +365,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	background-color: #909092;
 	color: rgba(255,255,255,1);
 }
-	
-#sidebarmenu .icon{
-	
-}
 /********************************/
-
-
-/* slide show */
-#slide{
-	border: 5px solid #000405;
-	opacity: 0;
-	transition: opacity 3s linear;
-}
-
-#slider-wrapper > .slide:first-child{
-	opacity: 1;
-}
-
-
-#slider{
-	margin-bottom: 4em;
-}
-
 
 #page{
 	background: #17202A;
@@ -515,7 +385,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 	margin-bottom: 4em;
 }
 
-#featured{
+#main-content{
 	overflow: hidden;
 	margin-bottom: 3em;
 	padding-top: 5em;
@@ -538,15 +408,6 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 }
 /****************/
 
-#sidebar{
-	
-}
-
-
-#footer{
-	
-}
-
 #poweredby{
 	overflow: hidden;
 	padding: 5em 0em;
@@ -565,11 +426,7 @@ ul.contact li a.icon-rss:before { background: #F2600B; }
 }
 /* End ID's */
 
-.fa{
-	display: block;
-	color: #000;
-	background: red;
-}
+
 /*************************************************/
 
 /* Input Form Styling */
@@ -613,5 +470,3 @@ input[type=number], select{
 #output{
 	margin: 8px 0;
 }
-
-

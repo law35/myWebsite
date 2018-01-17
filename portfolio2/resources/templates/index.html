@@ -14,7 +14,7 @@
 <script type="text/javascript" src="{% static 'js/quotegen.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/pwGen.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/macro.js' %}"></script>
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet" />
 <link rel="stylesheet" type="text/css"  href="{% static 'css/styling.css' %}" media="all" />
 
 <!--[if IE 6]><link href="styling_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -23,11 +23,13 @@
 <body>
 <div id="page" class="container">
 	<div id="header">
-		<div id="logo">
+		<div id="my-avatar">
 			<img src="{% static 'images/me.png'%}" alt="" />
-			<h1><a href="#">My Portfolio</a></h1>
-			<span>Design by <a href="" rel="">
-			C.O.Lawshea</a></span>
+			<h1><a>My Portfolio</a></h1>
+			<span>
+				Design by <a href="https://www.linkedin.com/in/clearthur-oscar-lawshea-01680a105">
+				C.O.Lawshea</a>
+			</span>
 		</div>
 		<div id="sidebarmenu">
 			<ul>
@@ -87,7 +89,7 @@
 			</span>
 		</div>
 		{% block featured %}
-		<div id="featured">
+		<div id="main-content">
 			{% block content %}
 			<ul class="lst">
 				<li class="first">
