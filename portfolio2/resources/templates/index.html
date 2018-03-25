@@ -2,29 +2,33 @@
 {% load staticfiles %}
 <!--two-column, fixed-width design with dark color scheme.-->
 
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>C.O.Lawshea</title>
-<meta name="keywords" content="Portfolio, Resume, Programming, Self taught, Programmer, Web design, Lawshea"/>
-<meta name="description" content="" />
+<meta name="keywords" content="Portfolio, Resume, Programming, Self, taught, Programmer, Web, design, Lawshea"/>
+<meta name="description" content="Portfolio and curriculum vitae website." />
 {% block script %}
 <script type="text/javascript" src="#"></script>
 {% endblock %}
 <script type="text/javascript" src="{% static 'js/quotegen.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/pwGen.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/macro.js' %}"></script>
+<script>
+	function notice(){
+		window.alert("Under construction.");
+	}
+</script>
 <link href="http://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet" />
 <link rel="stylesheet" type="text/css"  href="{% static 'css/styling.css' %}" media="all" />
 
 <!--[if IE 6]><link href="styling_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-
 </head>
 <body>
 <div id="page" class="container">
 	<div id="header">
 		<div id="my-avatar">
-			<img src="{% static 'images/me.png'%}" alt="" />
+			<img src="{% static 'images/me.png'%}" alt="Clearthur Oscar Lawshea" />
 			<h1><a>My Portfolio</a></h1>
 			<span>
 				Design by <a href="https://www.linkedin.com/in/clearthur-oscar-lawshea-01680a105">
@@ -216,7 +220,7 @@
 				Powered by<a href="https://docs.djangoproject.com/en/1.11/" rel="">DJANGO</a>.
 			</span>
 			<span>
-				<a id="sitemap" href="#"><img src="{% static 'icons/sitemap.png'%}"  width="30" height="30" alt="" /></a>
+				<a id="sitemap"><img src="{% static 'icons/sitemap.png'%}"  width="30" height="30" alt="Site map image" onclick="notice();"/></a>
 			</span>
 		</div>
 	</div>
